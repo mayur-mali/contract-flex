@@ -23,6 +23,12 @@ import AppHeader from "../components/AppHeader.astro";
   <body class="bg-white dark:bg-gray-900">
     <AppHeader />
     <slot />
+    <script src="https://otpless.com/auth.js"></script>
+    <script>
+      function otpless(otplessUser) {
+        alert(JSON.stringify(otplessUser));
+      }
+    </script>
   </body>
 </html>
 <style>
